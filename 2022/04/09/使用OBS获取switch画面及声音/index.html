@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 使用OBS无延迟获取switch画面及声音 · Hexo</title><meta name="description" content="使用OBS无延迟获取switch画面及声音 - John Doe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://example.com/atom.xml" title="Hexo"><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://github.com/vickiegem" target="_blank" class="nav-list-link">GITHUB</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">使用OBS无延迟获取switch画面及声音</h1><div class="post-info">Apr 9, 2022</div><div class="post-content"><h2 id="设备准备"><a href="#设备准备" class="headerlink" title="设备准备"></a>设备准备</h2><ol>
+<li>switch</li>
+<li>采集卡</li>
+<li>电脑</li>
+<li>双口USB线(3.0)</li>
+<li>HDMI线</li>
+</ol>
+<h2 id="连接硬件"><a href="#连接硬件" class="headerlink" title="连接硬件"></a>连接硬件</h2><ol>
+<li>用HDMI连接采集卡和switch</li>
+<li>用双口USB连接采集卡和电脑</li>
+</ol>
+<h3 id="安装OBS"><a href="#安装OBS" class="headerlink" title="安装OBS"></a>安装OBS</h3><pre><code>安装OBS尽量选择正版软件，不要随便下载
+</code></pre>
+<blockquote>
+<p>我建议直接在steam上装，免费且正版，开源又好用</p>
+</blockquote>
+<h3 id="打开OBS"><a href="#打开OBS" class="headerlink" title="打开OBS"></a>打开OBS</h3><p>刚启动软件时，OBS的界面是没有任何输出的</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/LkpNff"><img src="https://s1.ax1x.com/2022/04/10/LkpNff.png" alt="LkpNff.png"></a></p>
+<h3 id="添加采集卡视频源"><a href="#添加采集卡视频源" class="headerlink" title="添加采集卡视频源"></a>添加采集卡视频源</h3><p>添加一个视频采集设备，选择USB3.0的设备，这个就是采集卡</p>
+<p><a target="_blank" rel="noopener" href="https://imgtu.com/i/Lkp7A1"><img src="https://s1.ax1x.com/2022/04/10/Lkp7A1.png" alt="Lkp7A1.png"></a></p>
+<h3 id="设置视频输出属性"><a href="#设置视频输出属性" class="headerlink" title="设置视频输出属性"></a>设置视频输出属性</h3><p>对视频采集设备进行属性设置</p>
+<ul>
+<li><p>分辨率设置成默认<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/Lk9YDJ"><img src="https://s1.ax1x.com/2022/04/10/Lk9YDJ.png" alt="Lk9YDJ.png"></a></p>
+</li>
+<li><p>对色彩空间和色彩范围进行设置<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/Lk9rvD"><img src="https://s1.ax1x.com/2022/04/10/Lk9rvD.png" alt="Lk9rvD.png"></a></p>
+</li>
+<li><p>对音频进行设置<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/Lk9hPP"><img src="https://s1.ax1x.com/2022/04/10/Lk9hPP.png" alt="Lk9hPP.png"></a></p>
+</li>
+<li><p>保存设置，设置完成，此时已经能够获取到实时画面了</p>
+</li>
+</ul>
+<h3 id="设置声音输出属性"><a href="#设置声音输出属性" class="headerlink" title="设置声音输出属性"></a>设置声音输出属性</h3><p>这样设置可以无延迟输出音频</p>
+<ul>
+<li><p>编辑高级音频属性<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/LkCVG6"><img src="https://s1.ax1x.com/2022/04/10/LkCVG6.png" alt="LkCVG6.png"></a></p>
+</li>
+<li><p>监听采集卡音频<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/LkCKqH"><img src="https://s1.ax1x.com/2022/04/10/LkCKqH.png" alt="LkCKqH.png"></a></p>
+</li>
+<li><p>保存设置，设置完成，此时已经能够获取到实时声音了</p>
+</li>
+</ul>
+<h3 id="添加自己说话的声音-可选"><a href="#添加自己说话的声音-可选" class="headerlink" title="添加自己说话的声音(可选)"></a>添加自己说话的声音(可选)</h3><ul>
+<li><p>添加一个音频采集设备（添加一个麦克风）<br><a target="_blank" rel="noopener" href="https://imgtu.com/i/LkCyWV"><img src="https://s1.ax1x.com/2022/04/10/LkCyWV.png" alt="LkCyWV.png"></a></p>
+</li>
+<li><p>保存设置，设置完成，此时已经能够获取到实时自己的声音了</p>
+</li>
+</ul>
+<h2 id="设置完成"><a href="#设置完成" class="headerlink" title="设置完成"></a>设置完成</h2><p>此时就能愉快的通过笔记本屏幕，无声画延迟的玩switch了</p>
+</div></article></div></main><footer><div class="paginator"><a href="/2022/04/07/hello-world/" class="next">NEXT</a></div><div class="copyright"><p>© 2021 - 2022 <a href="http://example.com">John Doe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>
